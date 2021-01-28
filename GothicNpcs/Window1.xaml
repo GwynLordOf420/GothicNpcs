@@ -1,0 +1,29 @@
+﻿<Window x:Class="GothicNpcs.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GothicNpcs"
+        mc:Ignorable="d"
+        Title="Dodawanie Nowego Studenta" Height="391.075" Width="450">
+    <Grid>
+        <Label Content="Dodaj nowego Studenta" HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Podaj Indeks:" HorizontalAlignment="Left" Margin="108,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,56,0,0" Name="numerindeks"/>
+
+        <Label Content="Podaj Imie:" HorizontalAlignment="Left" Margin="108,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,85,0,0" Name="imie"/>
+
+        <Label Content="Podaj Nazwisko:" HorizontalAlignment="Left" Margin="108,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,113,0,0" Name="nazwisko"/>
+
+        <Label Content="Podaj Wiek:" HorizontalAlignment="Left" Margin="108,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,141,0,0" Name="wiek"/>
+
+        <Button Content="Dodaj Studenta" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="108" Height="35" Click="DodajStudenta_Click"/>
+        <Image HorizontalAlignment="Left" Height="110" Margin="210,169,0,0" VerticalAlignment="Top" Width="120" Name="Show_Image"/>
+        <Button Content="Wybierz Obraz" HorizontalAlignment="Left" Margin="219,284,0,0" VerticalAlignment="Top" Width="97" Click="WstawObraz_Click"/>
+
+    </Grid>
+</Window>
