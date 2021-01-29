@@ -69,13 +69,13 @@ namespace GothicNpcs
             }
         }
 
-        private void Dodaj_Click(object sender, RoutedEventArgs e)
+        private void Add_NPC(object sender, RoutedEventArgs e)
         {
             Window1 dodaj = new Window1();
             dodaj.Show();
         }
 
-        public void DanePlik_Click(object sender, RoutedEventArgs e)
+        public void Refresh(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -95,11 +95,11 @@ namespace GothicNpcs
 
         private void Edycja(object sender, RoutedEventArgs e)
         {
-            Window2 win2 = new Window2(SzukaneId.Text);
+            Window2 win2 = new Window2(SearchId.Text);
             win2.Show();
         }
 
-        private void Baza(object sender, RoutedEventArgs e)
+        private void Base(object sender, RoutedEventArgs e)
         {
             string connetionString;
             SqlConnection cnn;

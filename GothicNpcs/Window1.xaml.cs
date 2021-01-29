@@ -57,12 +57,12 @@ namespace GothicNpcs
             Show_Image.Source = bitmapImage;
         }
 
-        private void DodajStudenta_Click(object sender, RoutedEventArgs e)
+        private void Add_NPC(object sender, RoutedEventArgs e)
         {
 
 
             var serializer = new XmlSerializer(gnpcList.GetType());
-            gnpcList.Add(new npcs1(gnpcList.Count + 1, numerindeks.Text, imie.Text, nazwisko.Text, Convert.ToInt16(wiek.Text), where));
+            gnpcList.Add(new npcs1(gnpcList.Count + 1,  townRole.Text,  name.Text, believs.Text, Convert.ToInt16(level.Text), where));
             using (var writer = XmlWriter.Create("npcList.xml"))
             {
                 serializer.Serialize(writer, gnpcList);
@@ -70,7 +70,7 @@ namespace GothicNpcs
             MessageBox.Show("Added.");
         }
 
-        public void WstawObraz_Click(object sender, RoutedEventArgs e)
+        public void Insert_image(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image files(*.jpg; *.jpeg; *.gif; *.png; *.bmp;)|*.jpg; *.jpeg; *.png; *.gif; *.bmp;";
@@ -83,5 +83,7 @@ namespace GothicNpcs
             }
 
         }
+
+      
     }
 }

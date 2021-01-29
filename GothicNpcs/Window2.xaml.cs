@@ -55,14 +55,15 @@ namespace GothicNpcs
                 MessageBox.Show("No image to load.", "Warning", MessageBoxButton.OK);
             }
             npcs1 gfnpc = gnpcList.Find(oElement => oElement.npcId == Convert.ToInt32(NumerId));
+            npcId.Text = Convert.ToString(gfnpc.npcId);
             Name.Text = gfnpc.npcName;
             Believs.Text = gfnpc.believs;
             Level.Text = Convert.ToString(gfnpc.npcLevel);
-            NpcRole.Text = Convert.ToString(gfnpc.townRole);
+            NpcRole.Text =gfnpc.townRole;
             NumerId = id;
         }
 
-        private void Edycja_Click(object sender, RoutedEventArgs e)
+        private void Edit(object sender, RoutedEventArgs e)
         {
             NpcRole.IsEnabled = true;
             Name.IsEnabled = true;
@@ -72,7 +73,7 @@ namespace GothicNpcs
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Save(object sender, RoutedEventArgs e)
         {
             npcs1 gfnpc = gnpcList.Find(oElement => oElement.npcId == Convert.ToInt32(NumerId));
             gfnpc.townRole = NpcRole.Text;
@@ -90,7 +91,7 @@ namespace GothicNpcs
             }
         }
 
-        private void WstawObraz_Click(object sender, RoutedEventArgs e)
+        private void Insert_image(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image files(*.jpg; *.jpeg; *.gif; *.png; *.bmp;)|*.jpg; *.jpeg; *.png; *.gif; *.bmp;";

@@ -22,7 +22,7 @@ namespace GothicNpcs
     {
         [XmlAttribute("id")]
         public int npcId { get; set; }
-        [XmlElement("npcIndex")]
+        [XmlElement("townRole")]
         public string townRole { get; set; }
         [XmlElement("Name")]
         public string npcName { get; set; }
@@ -50,7 +50,7 @@ namespace GothicNpcs
             believs = "Beliar";
             townRole = "Necromancer";
             npcLevel = 21;
-            image = "C:\\Users\\wasie\\Pictures\\Obrazy\\Postawowy.jpg";
+            image = "C:\\Users\\CUNTCRUSHER\\Desktop\\obrazy\\Yuri_portrait.jpg";
         }
     }
 }

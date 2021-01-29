@@ -5,28 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GothicNpcs"
         mc:Ignorable="d"
-        Title="Edycja Studenotów" Height="450" Width="800">
+        Title="Edit NPCs" Height="450" Width="800">
     <Grid>
 
-        <Label Content="Dodaj nowego Studenta" HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Edit existing NPC" HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top"/>
 
-        <Label Content="Podaj Indeks:" HorizontalAlignment="Left" Margin="108,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,56,0,0" Name="NpcRole" IsEnabled="False"/>
+        <Label Content="Insert ID:" HorizontalAlignment="Left" Margin="108,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,56,0,0" Name="npcId" IsEnabled="False"/>
 
-        <Label Content="Podaj Imie:" HorizontalAlignment="Left" Margin="108,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <Label Content="Insert name:" HorizontalAlignment="Left" Margin="108,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,85,0,0" Name="Name" IsEnabled="False"/>
 
-        <Label Content="Podaj Nazwisko:" HorizontalAlignment="Left" Margin="108,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <Label Content="Insert believs:" HorizontalAlignment="Left" Margin="108,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,113,0,0" Name="Believs" IsEnabled="False"/>
 
-        <Label Content="Podaj Wiek:" HorizontalAlignment="Left" Margin="108,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,141,0,0" Name="Level" IsEnabled="False"/>
+        <Label Content="Insert level:" HorizontalAlignment="Left" Margin="108,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,181,0,0" Name="Level" IsEnabled="False"/>
 
-        <Button Content="Edytuj" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="108" Height="35" Click="Edycja_Click"/>
-        <Button Content="Zapisz" HorizontalAlignment="Left" Margin="143,315,0,0" VerticalAlignment="Top" Width="107" Height="35" Click="Button_Click"/>
-        <Image HorizontalAlignment="Left" Height="110" Margin="210,169,0,0" VerticalAlignment="Top" Width="120" Name="ShowImage"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="10,374,0,0" VerticalAlignment="Top" Width="108" Height="35" Click="Edit"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="143,374,0,0" VerticalAlignment="Top" Width="107" Height="35" Click="Save"/>
+        <Image HorizontalAlignment="Left" Height="110" Margin="210,211,0,0" VerticalAlignment="Top" Width="120" Name="ShowImage"/>
 
-        <Button Content="Wybierz Obraz" HorizontalAlignment="Left" Margin="219,284,0,0" VerticalAlignment="Top" Width="97" Click="WstawObraz_Click" IsEnabled="False" Name="insert"/>
+        <Button Content="Choose image" HorizontalAlignment="Left" Margin="233,335,0,0" VerticalAlignment="Top" Width="97" Name="insert" IsEnabled="False"/>
+        <Label Content="Insert town role:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="108,147,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="210,147,0,0" Name="NpcRole" IsEnabled="False"/>
 
 
     </Grid>

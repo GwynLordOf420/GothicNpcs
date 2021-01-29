@@ -5,25 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GothicNpcs"
         mc:Ignorable="d"
-        Title="Dodawanie Nowego Studenta" Height="391.075" Width="450">
+        Title="Add new NPC" Height="391.075" Width="450">
     <Grid>
-        <Label Content="Dodaj nowego Studenta" HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top"/>
+       
 
-        <Label Content="Podaj Indeks:" HorizontalAlignment="Left" Margin="108,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,56,0,0" Name="numerindeks"/>
 
-        <Label Content="Podaj Imie:" HorizontalAlignment="Left" Margin="108,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,85,0,0" Name="imie"/>
 
-        <Label Content="Podaj Nazwisko:" HorizontalAlignment="Left" Margin="108,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,113,0,0" Name="nazwisko"/>
+        <Label Content="Insert name:" HorizontalAlignment="Left" Margin="103,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,85,0,0" Name="name"/>
 
-        <Label Content="Podaj Wiek:" HorizontalAlignment="Left" Margin="108,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,141,0,0" Name="wiek"/>
+        <Label Content="Insert believs:" HorizontalAlignment="Left" Margin="103,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,113,0,0" Name="believs"/>
 
-        <Button Content="Dodaj Studenta" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="108" Height="35" Click="DodajStudenta_Click"/>
-        <Image HorizontalAlignment="Left" Height="110" Margin="210,169,0,0" VerticalAlignment="Top" Width="120" Name="Show_Image"/>
-        <Button Content="Wybierz Obraz" HorizontalAlignment="Left" Margin="219,284,0,0" VerticalAlignment="Top" Width="97" Click="WstawObraz_Click"/>
+        <Label Content="Insert level:" HorizontalAlignment="Left" Margin="103,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.37,-2.262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="210,177,0,0" Name="level"/>
+
+        <Button Content="Add NPC" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="108" Height="35" Click="Add_NPC"/>
+        <Image HorizontalAlignment="Left" Height="110" Margin="210,200,0,0" VerticalAlignment="Top" Width="120" Name="Show_Image"/>
+        <Button Content="Choose Image" HorizontalAlignment="Left" Margin="219,315,0,0" VerticalAlignment="Top" Width="97" Click="Insert_image"/>
+        
+        <Label Content="Insert npc role:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103,141,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="210,144,0,0" RenderTransformOrigin="0.498,0.493" Name="townRole"/>
 
     </Grid>
 </Window>
